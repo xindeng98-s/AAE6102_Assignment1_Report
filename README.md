@@ -5,9 +5,10 @@
 
 ## Task 1: Acquisition
 The first step in GNSS signal processing is acquisition, where Intermediate Frequency (IF) data is processed using a GNSS Software-Defined Radio (SDR). The acquisition process aims to detect satellite signals and estimate their coarse Doppler shift and code phase. The results of the acquisition provide an initial assessment of signal availability, ensuring that the satellites can be successfully tracked in subsequent steps.
-
-<img width="432" alt="image" src="https://github.com/xindeng98-s/AAE6102_Assignment1_Report/figs/acqUrban.fig" />
-<img width="432" alt="image" src="https://github.com/xindeng98-s/AAE6102_Assignment1_Report/figs/acqOpensky.fig" />
+Urban:
+<img width="432" alt="image" src="https://github.com/xindeng98-s/AAE6102_Assignment1_Report/blob/main/figs/acqUrban.png" />
+OpenSky:
+<img width="432" alt="image" src="https://github.com/xindeng98-s/AAE6102_Assignment1_Report/blob/main/figs/acqOpensky.png" />
 
 
 ---
@@ -16,11 +17,15 @@ The first step in GNSS signal processing is acquisition, where Intermediate Freq
 The tracking phase involves adapting the tracking loop, specifically the Delay-Locked Loop (DLL), to maintain a steady lock on the satellite signals. Multiple correlators are implemented to generate correlation plots, allowing for an in-depth analysis of tracking performance. The impact of urban interference, such as multipath and signal blockage, is examined by analyzing the correlation peaks. In urban environments, reduced signal strength and distorted correlation functions can negatively affect tracking stability.
 
 ### Tracking results for Opensky Dataset and Urban Dataset
+OpenSky:
 
-<img width="432" alt="image" src="https://github.com/xindeng98-s/AAE6102_Assignment1_Report/figs/TrackingOpenskyChannel1(PRN16)Results.fig" />
-<img width="432" alt="image" src="https://github.com/xindeng98-s/AAE6102_Assignment1_Report/figs/TrackingOpenSkyChannel1CNO.fig" />
-<img width="432" alt="image" src="https://github.com/xindeng98-s/AAE6102_Assignment1_Report/figs/TrackingUrbanChannel1(PRN1)Results.fig" />
-<img width="432" alt="image" src="https://github.com/xindeng98-s/AAE6102_Assignment1_Report/figs/TrackingUrbanChannel1CNO.fig" />
+<img width="432" alt="image" src="https://github.com/xindeng98-s/AAE6102_Assignment1_Report/blob/main/figs/TrackingOpenskyChannel1(PRN16)Results.png" />
+<img width="432" alt="image" src="https://github.com/xindeng98-s/AAE6102_Assignment1_Report/blob/main/figs/TrackingOpenSkyChannel1CNO.png" />
+
+Urban:
+
+<img width="432" alt="image" src="https://github.com/xindeng98-s/AAE6102_Assignment1_Report/blob/main/figs/TrackingUrbanChannel1(PRN1)Results.png" />
+<img width="432" alt="image" src="https://github.com/xindeng98-s/AAE6102_Assignment1_Report/blob/main/figs/TrackingUrbanChannel1CNO.png" />
 
 
 ### 2.1 Analysis of Tracking Performance Based on CN₀ and DLL Discriminator
@@ -42,7 +47,7 @@ Consequently, the affected signals generate erratic outputs from the DLL discrim
 Once tracking is achieved, the navigation message is decoded to obtain essential parameters, such as ephemeris data. This data delivers accurate information about the satellite's position and clock, which is crucial for precise positioning. Successfully decoding at least one satellite’s data confirms the capability to extract vital orbital parameters needed for estimating the user's position.
 
 output eph data:
-<img width="432" alt="image" src="https://github.com/xindeng98-s/AAE6102_Assignment1_Report/figs/OpenskyNavigation.png" />
+<img width="432" alt="image" src="https://github.com/xindeng98-s/AAE6102_Assignment1_Report/blob/main/figs/OpenskyNavigation.png" />
 
 ## Task 4: Position and Velocity Estimation
 
